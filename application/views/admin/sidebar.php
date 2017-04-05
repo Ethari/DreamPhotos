@@ -26,7 +26,7 @@
                     <a href="#"><i class="fa fa-wrench fa-fw"></i> Questions <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="panels-wells.html">Testreate</a>
+                            <a href="panels-wells.html">Test2sdreate</a>
                         </li>
                         <li>
                             <a href="buttons.html">Browse</a>
