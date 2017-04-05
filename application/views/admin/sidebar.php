@@ -26,7 +26,7 @@
                     <a href="#"><i class="fa fa-wrench fa-fw"></i> Questions <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="panels-wells.html">Create</a>
+                            <a href="panels-wells.html">Testreate</a>
                         </li>
                         <li>
                             <a href="buttons.html">Browse</a>
@@ -37,6 +37,7 @@
                 <li>
                     <a href="tables.html"><i class="fa fa-sitemap fa-fw"></i> Courses</a>
                 </li>
+
             </ul>
         </div>
         <!-- /.sidebar-collapse -->
