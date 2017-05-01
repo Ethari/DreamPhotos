@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94d0339c-5c49-4c1a-ad0c-b54a9b17f291" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pictures/example.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pictures/front_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Authentication.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Courses_Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/courses.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/navbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/freelancer.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/contact_me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/freelancer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/freelancer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery_validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/scripts/home.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/sb-admin-2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/scripts/admin.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/Questions.php" afterPath="$PROJECT_DIR$/application/controllers/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FairTest.iml" afterPath="$PROJECT_DIR$/.idea/FairTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Welcome.php" afterPath="$PROJECT_DIR$/application/controllers/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/courses.php" afterPath="$PROJECT_DIR$/application/controllers/courses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Admin_loader.php" afterPath="$PROJECT_DIR$/application/models/Admin_loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/footer_admin.php" afterPath="$PROJECT_DIR$/application/views/admin/footer_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/header_admin.php" afterPath="$PROJECT_DIR$/application/views/admin/header_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/home.php" afterPath="$PROJECT_DIR$/application/views/admin/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/navbar_admin.php" afterPath="$PROJECT_DIR$/application/views/admin/navbar_admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/sidebar.php" afterPath="$PROJECT_DIR$/application/views/admin/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/footer.php" afterPath="$PROJECT_DIR$/application/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header.php" afterPath="$PROJECT_DIR$/application/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/styles.css" afterPath="$PROJECT_DIR$/assets/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/assets/font-awesome/css/font-awesome.css" />
-    </list>
+    <list default="true" id="94d0339c-5c49-4c1a-ad0c-b54a9b17f291" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -584,12 +544,12 @@
       <workItem from="1491406278524" duration="2622000" />
       <workItem from="1491923394971" duration="7058000" />
       <workItem from="1492293740919" duration="5848000" />
-      <workItem from="1493660886802" duration="16302000" />
+      <workItem from="1493660886802" duration="16360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33242000" />
+    <option name="totallyTimeSpent" value="33300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
