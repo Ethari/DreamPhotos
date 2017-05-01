@@ -3,11 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Courses extends CI_Controller {
 
-    public function index($mode)
+    public function index()
     {
-        $this->load->model('admin_loader');
-        $page = 'create';
-        $this->admin_loader->generateAdminPage($page);
+        $this->load->model('Courses_Model');
+        $courses = $this->Courses_Model->getCourses(1);
+        $data = array(
+            'courses' => $courses
+        );
+
+        $msg = $this->load->view('/admin/courses', $data, true);
+        echo $msg;
 
     }
 }

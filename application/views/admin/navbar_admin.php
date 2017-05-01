@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: mikolaj
- * Date: 11/04/2017
- * Time: 17:28
- */
+<nav class="navbar navbar-default" style = "margin: 0;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><strong>FairTest</strong></a>
+        </div>
+        <button class="btn btn-danger navbar-btn button-right">Log out</button>
+    </div>
+</nav>

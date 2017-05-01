@@ -2,11 +2,36 @@
 <?php
 $this->load->helper('url');
 ?>
-<html>
+
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="<?php echo base_url("/assets/css/bootstrap.css"); ?>" />
-    <script type="text/javascript" src="<?php echo base_url("/assets/js/jquery.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url("/assets/js/bootstrap.js"); ?>"></script>
-    <title>Testing Application</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DreamPhotos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="<?php echo base_url("/assets/css/bootstrap.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/styles.css"); ?>" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="<?php echo base_url("/assets/css/freelancer.min.css"); ?>" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="<?php echo base_url("/assets/font-awesome/css/font-awesome.min.css"); ?>" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script type = "text/javascript">
+        var BASE_URL = "<?php echo base_url();?>";
+    </script>
+
 </head>
-<body>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
