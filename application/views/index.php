@@ -17,16 +17,26 @@
                         <hr class="star-light">
                         <span class="skills">Transform your photos into a dream-like state using a deep learning algorithm!</span>
                     </div>
-                    <div class = "row">
-                        <a href="#" class="btn btn-lg btn-outline btn_upload_pic" style = "margin-top:30px;">
+                    <div class = "row text-center">
+                        <button id = "upload_button" class="btn btn-lg btn-outline btn_upload_pic" style = "margin-top:30px;">
                             <i class="fa fa-upload"></i> Upload your picture!
-                        </a>
+                        </button>
+                        <form action="<?php echo base_url(); ?>uploader" id = "dropzone" class="dropzone" style = "width: 50%; margin: 0 auto; margin-top: 3%; display: none;" id="demo-upload">
+                            <div class="dz-message" style = 'color: black;'>
+                                Drop your picture here!<br>
+                            </div>
+                        </form>
+                        <button id = "process_image" class="btn btn-lg btn-outline btn_upload_pic" style = "margin-top: 3%; display: none; " data-toggle="modal" data-target="#photoModal">
+                            <i class="fa fa-picture-o"></i> Convert your image!
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
@@ -117,45 +127,6 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="text-center">
-    <div class="footer-above">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>Authors</h3>
-                    <p><a href = "">Kinga Gulewska</a> & <a href = "https://www.linkedin.com/in/mikołaj-szewczyk-19477283/">Mikołaj Szewczyk</a>
-                    </p>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>Our websites</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>About DreamPhotos</h3>
-                    <p>DreamPhotos is our project at <br><a href = "http://pwr.edu.pl"> Wroclaw University of Technology</a>! </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; DreamPhotos 2017
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
     <a class="btn btn-primary" href="#page-top">
@@ -163,93 +134,9 @@
     </a>
 </div>
 
-<div id="loginModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content text-center">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Login to DreamPhotos</h4>
-            </div>
-            <div class="modal-body" style = "padding-bottom: 40px;">
-                    <div id = "login_fail" class="alert alert-warning alert-dismissable" style = "display: none;">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>Error!</strong><br> Invalid username or password.
-                    </div>
-                    <form class = "login-input" id = "login-form">
-                        <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input type="text" placeholder = "Username" name = "username" class="form-control" id="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" placeholder = "Password" name = "password" class="form-control" id="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100px;">Login</button>
-                    </form>
-                    <h6 class = "button-right">Don't have an account? <a href = "" data-toggle="modal" data-target="#registerModal" id = "registerButton" >Register</a></h6>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="registerModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content text-center">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Register your account</h4>
-            </div>
-            <div class="modal-body" style = "padding-bottom: 40px;">
-                <div id = "register_fail" class="alert alert-warning alert-dismissable" style = "display: none;">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Error!</strong><br> This user already exists!.
-                </div>
-                <form class = "login-input" id = "register-form">
-                    <div class="form-group">
-                        <label for="username">Username <span class = "star_req">*</span>:</label>
-                        <input type="text" placeholder = "Username" name = "username" class="form-control" id="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstName">Name <span class = "star_req">*</span>:</label>
-                        <input type="text" placeholder = "Your first name" name = "firstName" class="form-control" id="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Surname:</label>
-                        <input type="text" placeholder = "Your last name" name = "lastName" class="form-control" id="lastName">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email <span class = "star_req">*</span>:</label>
-                        <input type="email" placeholder = "Your email address" name = "email" class="form-control" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password_one">Password <span class = "star_req">*</span>:</label>
-                        <input type="password" placeholder = "**********" name = "password_one" class="form-control" id="password_one" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password_repeat">Confirm password <span class = "star_req">*</span>:</label>
-                        <input type="password" placeholder = "**********" name = "password_repeat" class="form-control" id="password_repeat" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100px;">Register</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
 
 <!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="converted_picture" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">

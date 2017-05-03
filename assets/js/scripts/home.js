@@ -97,4 +97,40 @@ $(function() {
         }
     });
 
+    $("#upload_button").click(function() {
+        $("#dropzone").toggle();
+    });
+
+    $("#process_image").click(function() {
+        $("#process").toggle();
+    });
+
+    Dropzone.options.dropzone = {
+        init: function() {
+            this.on("addedfile", function() {
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+            this.on("success", function(file, response, myEvent) {
+                window.setTimeout(function() {
+                    //window.location.href = BASE_URL + "user_uploads/" + response + ".jpg";
+                    $('#process_image').show();
+                    $('#process_image').attr('img_id', response);
+                }, 1000);
+            });
+        }
+    };
+
+
+
+    $('#photoModal').on('show.bs.modal', function(e) {
+
+        //get data-id attribute of the clicked element
+        var img_id = $('#process_image').attr('img_id');
+
+        //populate the textbox
+        $(e.currentTarget).find('img[name="uploaded_image"]').attr('src', BASE_URL + "user_uploads/" + img_id + ".jpg");
+    });
+
 });

@@ -17,7 +17,10 @@ $this->load->helper('url');
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url("/assets/css/bootstrap.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/bootstrap-social.css"); ?>" rel="stylesheet">
     <link href="<?php echo base_url("/assets/css/styles.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/drop.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/gallery.css"); ?>" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="<?php echo base_url("/assets/css/freelancer.min.css"); ?>" rel="stylesheet">

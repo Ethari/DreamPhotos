@@ -57,3 +57,11 @@ label.error{
     color: orangered;
 }
 
+.dropzone {
+    border: 2px dashed #0087F7 !important;
+    border-radius: 5px !important;
+}
+
+.processed_img{
+    padding: 30px;
+}

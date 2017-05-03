@@ -1,9 +1,7 @@
-<!-- Navigation -->
-
+<!-- Navigation -->]
 <?php
-if($this->session->has_userdata('username')){
-    echo "NICE";
-}
+
+
 ?>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
@@ -22,7 +20,7 @@ if($this->session->has_userdata('username')){
                     <a href="#page-top"></a>
                 </li>
                 <li class="">
-                    <a href="#home">Home</a>
+                    <a href="<?php echo base_url();?>">Home</a>
                 </li>
                 <li class="">
                     <a href="#info">About</a>
@@ -34,10 +32,10 @@ if($this->session->has_userdata('username')){
                 <?php
                     if($this->session->has_userdata('username')){
                         echo '<li class="">
-                                <a href = "" id="profile">Your profile</a>
+                                <a href = "'.base_url().'/user" id="profile">Your profile</a>
                               </li>';
                         echo '<li class="">
-                                <a href = "" id="logout">Logout</a>
+                                <a href = "'.base_url().'" id="logout">Logout</a>
                               </li>';
                     } else{
                         echo '<li class="">

@@ -17,6 +17,7 @@ class Authentication extends CI_Model {
             if (hash_equals($hashed_password, crypt($user['password'], "d41d8cd98f00b204e9800998ecf8427e"))) {
                 $user = array(
                     'username' => $user['username'],
+                    'id' => $results[0]['id'],
                     'name' => $results[0]['firstName'],
                     'logged_in' => time()
                 );
@@ -33,7 +34,7 @@ class Authentication extends CI_Model {
     }
 
     public function logout(){
-        $user = array('username', 'logged_in', 'name');
+        $user = array('username', 'logged_in', 'name', 'id');
         $this->session->unset_userdata($user);
     }
 
@@ -55,9 +56,12 @@ class Authentication extends CI_Model {
             );
 
             $this->db->insert('user', $user_insert);
+            $insert_id = $this->db->insert_id();
+
 
             $session_user = array(
                 'username' => $user['username'],
+                'id' => $insert_id,
                 'name' => $user['firstName'],
                 'logged_in' => time()
             );
